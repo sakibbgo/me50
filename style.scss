@@ -1,0 +1,170 @@
+$background_color_for_body: rgba(201, 198, 218, 0.171);
+
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+header {
+  margin-top: 70px;
+  background-color:rgba(11, 11, 223, 0.562);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+}
+
+.photocontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photocontainer > div {
+  background-color: $background_color_for_body;
+  margin: auto;
+  padding: 20px;
+  width: 300PX;
+  height: 300PX;
+}
+
+div > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+nav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: rgba(34, 22, 4, 0.836);
+  padding: 1px;
+}
+
+.grid {
+  background-color: $background_color_for_body;
+  display: grid;
+  padding: 10px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.grid-item {
+  background-color: rgba(243, 136, 13, 0.705);
+  font-size: 20px;
+  padding: 5px;
+}
+
+table {
+  border: 0;
+  tr {
+    text-align: center;
+    background-color: $background_color_for_body;
+  }
+
+}
+
+
+#mypic {
+  width: 50%;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#home_text {
+  width: 50%;
+  text-align: left;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+ul {
+  background-color: $background_color_for_body;
+  padding: 15px;
+  margin: 15px;
+  list-style-type: circle;
+}
+
+li {
+  margin: 15px;
+}
+
+li p {
+  color: rgb(0, 34, 128);
+  font-family: Calibri;
+  font-size: 150%;
+}
+
+#warning {
+  color: rgb(218, 74, 17);
+  margin: auto;
+  padding: 20px;
+}
+
+%message {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+}
+
+.positive {
+  @extend %message;
+  background-color: green;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 300px){
+  #container {
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 100%;
+  }
+}
+
+.my_video {
+  background-color: $background_color_for_body;
+  text-align:center;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: rgba(11, 11, 223, 0.562);
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
